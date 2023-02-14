@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(/images/galorian-map.jpg);
+  background-image: url(./images/galorian-map.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
