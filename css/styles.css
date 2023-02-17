@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/galorian-map.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: fixed;
+  background-size: 100vh;
+  background-size: 100vw;
+  
+}
+
+a {
+  
+}
+
+/* Navbar */
+
+.navbar-body {
+  z-index: 2;
+  /* margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  top: 0; */
+  background-color: #4E2E23ff;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: dotted 6px;
+  /* border-color: rgb(56, 3, 7); */
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.navbar-logo {
+  color: #DDA874ff;
+  font-size:2.5rem;
+  font-family: 'Julee', cursive;
+  font-weight: 900;
+  padding: 1rem;
+    white-space: nowrap;
+}
+
+
+.nav-list li {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+.navbar-link {
+  text-decoration: none;
+  padding-right: 20px;
+  color: rgb(175, 76, 71);
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', cursive;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-link:hover {
+  color: rgb(231, 117, 111);
+  font-size: 1.52rem;
+}
+
+.active-page {
+  text-decoration: overline;
+}
+
+.nav-small {
+  display: inline;
+}
+
+.fa-solid {
+  padding-right: 5px;
+}
+
+/* Page Main Content */
+
+.content{
+  border: double 7px;
+  border-radius: 10px;
+  background-color: rgb(250, 212, 174);
+  margin: 20px auto ;
+  /* margin-bottom: 140px; */
+  width: 90%;
+  line-height: 1.2;
+  /* position: relative; */
+  /* top: 130px; */
+}
+
+.content-text {
+  font-size: 25px;
+  padding: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-text ul {
+  margin: 50px;
+}
+
+.content-text li {
+  padding: 7px 0;
+}
+
+.content-bold {
+  font-weight: 700;
+}
+
+.autograph {
+  font-style: italic;
+}
+
+.ui-hr {
+  border: 0;
+  border-bottom: 5px dotted rgba(83, 5, 11, 0.514);
+  width: 50%;
+  margin: 20px auto;
+}
+
+/* Button Code */
+
+.btn-div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  margin: 20px auto;
+  background: #ad1111;
+  background-image: -webkit-linear-gradient(top, #ad1111, #630909);
+  background-image: -moz-linear-gradient(top, #ad1111, #630909);
+  background-image: -ms-linear-gradient(top, #ad1111, #630909);
+  background-image: -o-linear-gradient(top, #ad1111, #630909);
+  background-image: linear-gradient(to bottom, #ad1111, #630909);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  -webkit-box-shadow: 0px 1px 14px #1a191a;
+  -moz-box-shadow: 0px 1px 14px #1a191a;
+  box-shadow: 0px 1px 14px #1a191a;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #8f0d0d;
+  background-image: -webkit-linear-gradient(top, #8f0d0d, #470707);
+  background-image: -moz-linear-gradient(top, #8f0d0d, #470707);
+  background-image: -ms-linear-gradient(top, #8f0d0d, #470707);
+  background-image: -o-linear-gradient(top, #8f0d0d, #470707);
+  background-image: linear-gradient(to bottom, #8f0d0d, #470707);
+  text-decoration: none;
+}
+
+/* Iframe Code */
+
+.iframe-box {
+  width: 900px;
+  margin: 20px auto 0px;
+}
+
+iframe {
+  height: 800px;
+  width: 900px;
+  /* margin-top: 120px; */
+  /* margin: 0 auto; */
+}
+
+/* #4E2E23ff
+--buff: #DDA874ff;
+--chocolate-cosmos: #53050Bff;
+--caput-mortuum: #4E2E23ff;
+--bole: #663D34ff;
+--auburn: #9A3832ff; */
+
+@media screen and (max-width: 1350px) {
+  .nav-small {
+  /* display: none; */
+  }
+
+  .navbar-body {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-logo {
+    padding: 5px 0 0 0;
+  }
+  
+  .fa-solid {
+    padding-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width: 943px) {
+  .nav-small {
+  display: none;
+  }
+
+  .navbar-body {
+    flex-direction: column;
+  }
+
+  .active-page {
+    text-decoration: overline;
+    color: rgb(109, 45, 41);
+  }
+
+}
