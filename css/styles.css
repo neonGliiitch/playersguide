@@ -186,6 +186,9 @@ iframe {
 --bole: #663D34ff;
 --auburn: #9A3832ff; */
 
+
+/* Smaller Screen Navbar Adjustment */
+
 @media screen and (max-width: 1350px) {
   .nav-small {
   /* display: none; */
@@ -207,6 +210,8 @@ iframe {
 
 }
 
+/* Mobile Screen Navbar adjustment */
+
 @media screen and (max-width: 943px) {
   .nav-small {
   display: none;
@@ -219,6 +224,16 @@ iframe {
   .active-page {
     text-decoration: overline;
     color: rgb(109, 45, 41);
+  }
+
+}
+
+/* Mobile screen background img fix */
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: none;
+    background-color: rgb(58, 97, 141);
   }
 
 }
